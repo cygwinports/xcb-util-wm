@@ -1,0 +1,11 @@
+DESCRIPTION="XCB window manager libraries"
+HOMEPAGE="http://xcb.sourceforge.net/"
+SRC_URI="http://xcb.freedesktop.org/dist/${P}.tar.bz2"
+
+PKG_NAMES="libxcb-ewmh1 libxcb-ewmh-devel libxcb-icccm4 libxcb-icccm-devel"
+libxcb_ewmh1_CONTENTS="usr/bin/cygxcb-ewmh-1.dll usr/share/doc/"
+libxcb_ewmh_devel_CONTENTS="usr/include/xcb/xcb_ewmh.h usr/lib/libxcb-ewmh.*
+                            usr/lib/pkgconfig/xcb-ewmh.pc"
+libxcb_icccm4_CONTENTS="usr/bin/cygxcb-icccm-4.dll"
+libxcb_icccm_devel_CONTENTS="usr/include/xcb/xcb_icccm.h usr/lib/libxcb-icccm.*
+                             usr/lib/pkgconfig/xcb-icccm.pc"
