@@ -1,0 +1,27 @@
+NAME="xcb-util-wm"
+VERSION=0.3.9
+RELEASE=1
+CATEGORY="X11"
+SUMMARY="XCB window manager libraries"
+DESCRIPTION="The xcb-util module provides a number of libraries which sit on
+top of libxcb, the core X protocol library, and some of the extension libraries.
+These experimental libraries provide convenience functions and interfaces which
+make the raw X protocol more usable. Some of the libraries also provide
+client-side code which is not strictly part of the X protocol but which have
+traditionally been provided by Xlib."
+HOMEPAGE="http://xcb.sourceforge.net/"
+SRC_URI="http://xcb.freedesktop.org/dist/${P}.tar.bz2"
+
+PKG_NAMES="libxcb-ewmh2 libxcb-ewmh-devel libxcb-icccm4 libxcb-icccm-devel"
+libxcb_ewmh2_SUMMARY="XCB Extended Window Manager Hints library (runtime)"
+libxcb_ewmh2_CONTENTS="usr/bin/cygxcb-ewmh-2.dll usr/share/doc/"
+libxcb_ewmh_devel_SUMMARY="XCB Extended Window Manager Hints library (development)"
+libxcb_ewmh_devel_CONTENTS="usr/include/xcb/xcb_ewmh.h usr/lib/libxcb-ewmh.*
+                            usr/lib/pkgconfig/xcb-ewmh.pc"
+libxcb_icccm4_SUMMARY="XCB Inter-Client Communication Conventions library (runtime)"
+libxcb_icccm4_CONTENTS="usr/bin/cygxcb-icccm-4.dll"
+libxcb_icccm_devel_SUMMARY="XCB Inter-Client Communication Conventions library (runtime)"
+libxcb_icccm_devel_CONTENTS="usr/include/xcb/xcb_icccm.h usr/lib/libxcb-icccm.*
+                             usr/lib/pkgconfig/xcb-icccm.pc"
+
+KEEP_LA_FILES="none"
