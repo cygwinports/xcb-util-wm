@@ -1,7 +1,7 @@
 NAME="xcb-util-wm"
-VERSION=0.3.9
+VERSION=0.4.1
 RELEASE=1
-CATEGORY="X11"
+CATEGORY="Libs"
 SUMMARY="XCB window manager libraries"
 DESCRIPTION="The xcb-util module provides a number of libraries which sit on
 top of libxcb, the core X protocol library, and some of the extension libraries.
@@ -10,7 +10,7 @@ make the raw X protocol more usable. Some of the libraries also provide
 client-side code which is not strictly part of the X protocol but which have
 traditionally been provided by Xlib."
 HOMEPAGE="http://xcb.sourceforge.net/"
-SRC_URI="http://xcb.freedesktop.org/dist/${P}.tar.bz2"
+SRC_URI="http://xcb.freedesktop.org/dist/${NAME}-${VERSION}.tar.bz2"
 
 PKG_NAMES="libxcb-ewmh2 libxcb-ewmh-devel libxcb-icccm4 libxcb-icccm-devel"
 libxcb_ewmh2_SUMMARY="XCB Extended Window Manager Hints library (runtime)"
